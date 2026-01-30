@@ -132,9 +132,9 @@ async function loadSkills() {
 }
 
 // Load and render tools from JSON
-async function loadTools() {
+async function loadProgrammingLanguages() {
   try {
-    const response = await fetch('assets/data/tools.json');
+    const response = await fetch('assets/data/programming_languages.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -155,6 +155,6 @@ async function loadTools() {
   }
 }
 
-loadSkills();
+loadProgrammingLanguages();
 loadTools();
 loadCourses();
