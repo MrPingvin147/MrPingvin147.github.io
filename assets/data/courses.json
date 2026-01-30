@@ -1,0 +1,99 @@
+{
+  "courses": [
+    {
+      "title": "Machine Vision",
+      "description": "Image processing, object detection, and computer vision algorithms.",
+      "visible": true
+    },
+    {
+      "title": "Applied Automation",
+      "description": "PLC programming, motor dimensioning and control, PackML, safety, communication, and robot cells.",
+      "visible": true
+    },
+    {
+      "title": "Introduction to Robots in Automation",
+      "description": "General introduction to the automation industry, planning, and quality control.",
+      "visible": true
+    },
+    {
+      "title": "PLC Programming",
+      "description": "Programming with Structured Text, Ladder, and Function Charts.",
+      "visible": true
+    },
+    {
+      "title": "Control Systems",
+      "description": "PID controllers, modern control design, and Kalman filtering.",
+      "visible": true
+    },
+    {
+      "title": "Software Tools in Robotics",
+      "description": "Testing, source control, Docker, CMake, concurrency, design patterns, serialization, networking, ROS, and cloud computing.",
+      "visible": true
+    },
+    {
+      "title": "Algorithms & Data Structures",
+      "description": "Base information about sorting algorithms and data structures.",
+      "visible": false
+    },
+    {
+      "title": "Digital Interfacing",
+      "description": "Low voltage electronics, including resistors, capacitors, op-amps, and transistors.",
+      "visible": false
+    },
+    {
+      "title": "Modelling of Electromagnetic Systems",
+      "description": "The course provides insight into the process and tools needed for modelling electromagnetic systems.",
+      "visible": false
+    },
+    {
+      "title": "Numerical Methods",
+      "description": "Estimation methods for linear systems, nonlinear systems, and differential equations.",
+      "visible": false
+    },
+    {
+      "title": "Digital Signal Processing",
+      "description": "Signal analysis, filtering, and real-time processing techniques.",
+      "visible": false
+    },
+    {
+      "title": "Object-Oriented Programming in C++",
+      "description": "Introduction to C++ and object-oriented programming concepts.",
+      "visible": false
+    },
+    {
+      "title": "Object-Oriented Programming in Java",
+      "description": "Introduction to object-oriented programming concepts using Java.",
+      "visible": false
+    },
+    {
+      "title": "Kinematics",
+      "description": "Calculating the position, velocity, and acceleration of motion.",
+      "visible": false
+    },
+    {
+      "title": "Simulation",
+      "description": "Simulation techniques including digital twin simulation.",
+      "visible": false
+    },
+    {
+      "title": "Software Development",
+      "description": "SQL, Kanban, Scrum, version control, UML, and design patterns.",
+      "visible": false
+    },
+    {
+      "title": "Statistics",
+      "description": "Basic statistics concepts and methods.",
+      "visible": false
+    },
+    {
+      "title": "Robots in Context",
+      "description": "Path planning, ROS, Gazebo, navigation strategies, and localization.",
+      "visible": false
+    },
+    {
+      "title": "Deep Learning",
+      "description": "Linear, convolutional, and recurrent neural networks with optimization strategies.",
+      "visible": false
+    }
+  ]
+}

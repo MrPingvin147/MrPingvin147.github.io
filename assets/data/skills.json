@@ -1,0 +1,39 @@
+{
+  "programmingLanguages": [
+    {
+      "name": "C++",
+      "level": "Proficient",
+      "progress": 80
+    },
+    {
+      "name": "Structured Text",
+      "level": "Proficient",
+      "progress": 80
+    },
+    {
+      "name": "Python",
+      "level": "Proficient",
+      "progress": 80
+    },
+    {
+      "name": "Ladder",
+      "level": "Intermediate",
+      "progress": 60
+    },
+    {
+      "name": "SQL",
+      "level": "Intermediate",
+      "progress": 60
+    },
+    {
+      "name": "JavaScript",
+      "level": "Learning",
+      "progress": 30
+    },
+    {
+      "name": "HTML/CSS",
+      "level": "Learning",
+      "progress": 30
+    }
+  ]
+}

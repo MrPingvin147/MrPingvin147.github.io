@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MrPingvin147</title>
-    <meta name="description" content="Personal site hosted on GitHub Pages." />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Patrick Hartmann Thomsen</title>
+    <meta name="description" content="Personal site, hosted through GitHub" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="assets/Images/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a class="logo" href="#home">MrPingvin147</a>
+        <a class="logo" href="#home">Patrick Hartmann Thomsen</a>
         <div class="nav-links">
           <a href="#about">About</a>
+          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -30,50 +32,74 @@
     <main>
       <section id="home" class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Hello, I am</p>
-          <h1>MrPingvin147</h1>
-          <p class="subtitle">Building clean, fast, and friendly web experiences.</p>
+          <h1>Patrick Hartmann Thomsen</h1>
+          <p class="subtitle"><span class="age" data-birth-date="11-07-2003">22</span> years old | Robotics engineering student at SDU (Syddansk Universitet)</p>
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View projects</a>
             <a class="btn ghost" href="#contact">Get in touch</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="stat">
-            <span class="stat-label">Focused on</span>
-            <span class="stat-value">Web & Design</span>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Based in</span>
-            <span class="stat-value">GitHub Pages</span>
-          </div>
-          <div class="stat">
-            <span class="stat-label">Currently</span>
-            <span class="stat-value">Open for ideas</span>
-          </div>
+        <div class="selfie">
+            <img src="assets/Images/selfie.jpg" alt="selfie">
         </div>
+
       </section>
 
       <section id="about" class="section">
         <div class="section-title">
           <h2>About</h2>
-          <p>A short intro you can customize.</p>
         </div>
         <div class="about-grid">
           <p>
-            I design and build modern websites with a focus on speed, accessibility, and
-            clean visuals. This space is yours to tell your story — add your background,
-            your mission, and the kind of work you love to do.
+            I am a Robotics Engineering student at the University of Southern Denmark (SDU) 
+            with a strong passion for building practical, reliable, and intelligent robotic systems. 
+            I enjoy working where software, hardware, and electronics 
+            whether it is developing embedded software in C/C++ and Python, integrating sensors 
+            and communication systems, or programming industrial robots and automation equipment.
           </p>
-          <div class="pill-list">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>GitHub Pages</span>
-            <span>Responsive Design</span>
-            <span>Performance</span>
-          </div>
+          <p>
+            Throughout my studies, I have gained hands-on experience with ROS, machine vision, 
+            UR5 integration, TCP/IP communication, PLC programming, and embedded development. 
+            I thrive in technical environments where problem solving, iteration, and teamwork are central, 
+            and I am motivated by turning ideas into functional prototypes and real world solutions.
+          </p>
+          <p>
+            I am always curious, always learning, and always excited to take on new engineering challenges.
+          </p>
         </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-title">
+        <h2>Skills</h2>
+          <p>Technical expertise and tools I work with.</p>
+        </div>
+        
+        <h3 class="skill-category">Programming Languages</h3>
+        <div class="coding-skills" id="codingSkills">
+          <!-- Skills will be loaded from JSON -->
+        </div>
+        
+        <h3 class="skill-category">Tools & Technologies</h3>
+        <div class="tools-skills" id="toolsSkills">
+          <!-- Tools will be loaded from JSON -->
+        </div>
+      </section>
+
+      <section id="Courses" class="section">
+        <div class="section-title"> 
+          <h2>Courses</h2>
+          <p>Overview of completed courses</p>
+        </div>
+        
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Courses will be loaded from JSON -->
+        </div>
+        
+        <button class="btn-show-more" id="showMoreCourses" style="display: none;">
+          <span class="show-text">Show more courses</span>
+          <span class="hide-text" style="display: none;">Show less</span>
+        </button>
       </section>
 
       <section id="projects" class="section">
@@ -102,12 +128,21 @@
 
       <section id="contact" class="section">
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Let’s build something together.</p>
+          <h2>Get in Touch</h2>
         </div>
-        <div class="contact-card">
-          <p>Drop your email or social links here.</p>
-          <a class="btn primary" href="mailto:hello@example.com">hello@example.com</a>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <p>Email</p>
+            <a class="btn primary" href="mailto:patrick.h.th@gmail.com">patrick.h.th@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <p>LinkedIn</p>
+            <a class="btn primary" target="_blank" href="https://www.linkedin.com/in/patrick-thomsen-0b5aa3355/">View Profile</a>
+          </div>
+          <div class="contact-card">
+            <p>GitHub</p>
+            <a class="btn primary" target="_blank" href="https://github.com/MrPingvin147">View Profile</a>
+          </div>
         </div>
       </section>
     </main>

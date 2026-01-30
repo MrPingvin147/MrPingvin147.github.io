@@ -1,0 +1,15 @@
+{
+  "tools": [
+    "Linux",
+    "ROS",
+    "Docker",
+    "DockerFile",
+    "Git",
+    "OpenCV",
+    "MATLAB",
+    "Unity",
+    "Godot",
+    "B&R Automation Studio",
+    "Machine Expert"
+  ]
+}

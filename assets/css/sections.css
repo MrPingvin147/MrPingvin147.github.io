@@ -1,0 +1,212 @@
+/* Page Sections: Hero, Skills, Projects, Courses, About */
+
+.section {
+  padding: 3.5rem 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.section-title p {
+  color: var(--muted);
+}
+
+/* Hero Section */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+  padding: 3rem 0 4rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.selfie {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selfie img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  max-width: 420px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 1rem 0 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* About Section */
+
+.about-grid {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 2rem;
+}
+
+/* Skills Section */
+
+.skill-category {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  color: var(--text);
+}
+
+.coding-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.skill-level {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-strong));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.tools-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tools-skills span {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 0.65rem 1.1rem;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.tools-skills span:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+/* Courses Section */
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.course-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.course-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.course-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.course-hidden {
+  display: none;
+}
+
+/* Responsive Sections */
+
+@media (max-width: 780px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
