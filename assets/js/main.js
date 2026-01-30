@@ -37,7 +37,6 @@ if (ageElement) {
   }
 }
 
-// Load and render courses from JSON
 async function loadCourses() {
   try {
     const response = await fetch('assets/data/courses.json');
@@ -96,10 +95,9 @@ async function loadCourses() {
   }
 }
 
-// Load and render programming skills from JSON
-async function loadSkills() {
+async function loadProgrammingLanguages() {
   try {
-    const response = await fetch('assets/data/skills.json');
+    const response = await fetch('assets/data/programming_languages.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -131,10 +129,9 @@ async function loadSkills() {
   }
 }
 
-// Load and render tools from JSON
-async function loadProgrammingLanguages() {
+async function loadTools() {
   try {
-    const response = await fetch('assets/data/programming_languages.json');
+    const response = await fetch('assets/data/tools.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
