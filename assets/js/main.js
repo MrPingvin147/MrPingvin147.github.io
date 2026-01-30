@@ -41,6 +41,9 @@ if (ageElement) {
 async function loadCourses() {
   try {
     const response = await fetch('assets/data/courses.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
     
     const coursesGrid = document.getElementById('coursesGrid');
@@ -97,6 +100,9 @@ async function loadCourses() {
 async function loadSkills() {
   try {
     const response = await fetch('assets/data/skills.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
     
     const codingSkillsContainer = document.getElementById('codingSkills');
@@ -121,6 +127,7 @@ async function loadSkills() {
     
   } catch (error) {
     console.error('Failed to load skills:', error);
+    console.error('Error details:', error.message);
   }
 }
 
@@ -128,6 +135,9 @@ async function loadSkills() {
 async function loadTools() {
   try {
     const response = await fetch('assets/data/tools.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
     
     const toolsSkillsContainer = document.getElementById('toolsSkills');
@@ -141,6 +151,7 @@ async function loadTools() {
     
   } catch (error) {
     console.error('Failed to load tools:', error);
+    console.error('Error details:', error.message);
   }
 }
 
