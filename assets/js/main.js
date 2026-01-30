@@ -130,18 +130,14 @@ async function loadProgrammingLanguages() {
 }
 
 async function loadTools() {
-  console.log('Loading tools...');
   try {
     const response = await fetch('assets/data/tools.json');
-    console.log('Tools response:', response.status);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log('Tools data:', data);
     
     const toolsSkillsContainer = document.getElementById('toolsSkills');
-    console.log('Tools container:', toolsSkillsContainer);
     if (!toolsSkillsContainer) return;
     
     data.tools.forEach(tool => {
