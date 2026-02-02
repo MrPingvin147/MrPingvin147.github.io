@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "name": "3 axis drawing robot - semester 1 project",
+            "language": "Structured Text",
+            "description": "A simple 3 axis setup controlled by stepper motors through a B&R PLC",
+            "date": "16-12-2021"
+        },
+        {
+            "name": "Linear axis gripper - semester 2 project",
+            "language": "C++",
+            "description": "",
+            "date": "16-12-2022"
+        },
+        {
+            "name": "Throwing with a UR5 - semester 3 project",
+            "language": "C++ and matlab",
+            "description": "",
+            "date": "16-12-2023"
+        },
+        {
+            "name": "Inverse pendulum problem - semester 4 project",
+            "language": "Structured Text and C++",
+            "description": "",
+            "date": "16-12-2024"
+        }
+        
+    ]
+
+}
