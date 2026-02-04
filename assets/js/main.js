@@ -194,7 +194,7 @@ async function loadProjects() {
     card.innerHTML = `
       <div class="card-header">
         <h3>${options.title}</h3>
-        ${languageBadge}
+        <p>${languageBadge}</p>
       </div>
       <p>${options.description || 'No description available'}</p>
       <div class="card-footer">

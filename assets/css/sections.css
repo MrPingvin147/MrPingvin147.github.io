@@ -200,9 +200,9 @@
 
 .card-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.4rem;
   margin-bottom: 0.75rem;
 }
 
@@ -214,8 +214,7 @@
 
 .repo-language {
   background: var(--primary-soft);
-  color: var(--primary);
-  padding: 0.25rem 0.65rem;
+  color: var(--primary);  
   border-radius: var(--radius);
   font-size: 0.75rem;
   font-weight: 600;
